@@ -56,7 +56,7 @@ contract Ballot {
         }
     }
 
-    // Cretaing the modifier = voteEnded to check if the voting time is up.
+    // Creating the modifier = voteEnded to check if the voting time is up.
 
     modifier voteEnded(){
         require(block.timestamp <= endTime);
